@@ -6,15 +6,15 @@ function editorClassesHandler(__) {
   const newColor = form.color.value;
 
   // execute core logic
-  const newClasses = editorClasses(__, __, __);
+  const newClasses = editorClasses(newEmphasis, newSize, newColor);
 
   // display results to user
-  __.getElementById('editor').className = newClasses;
+  document.getElementById('editor').className = newClasses;
 
   // log action for developers
   console.log('\n-- user action --');
   console.log('newEmphasis:', '(' + typeof newEmphasis + ')', newEmphasis);
-  console.__('newSize:', '(' + typeof newSize + ')', newSize);
+  console.log('newSize:', '(' + typeof newSize + ')', newSize);
   console.log('newColor:', '(' + typeof newColor + ')', newColor);
   console.log('newClasses:', '(' + typeof newClasses + ')', newClasses);
 
