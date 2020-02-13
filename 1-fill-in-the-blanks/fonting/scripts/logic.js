@@ -17,9 +17,10 @@ const editorClassesTests = [
   { name: '15', args: ['bold', 'large', 'white'], expected: 'bold large white' },
   { name: '16', args: ['italic', 'large', 'white'], expected: 'italic large white' },
   // not all valid inputs
-  { name: '17', args: ['Italic', 'Small', 'Green'], expected: '' },
-  { name: '19', args: ['', '', ''], expected: '' },
-  { name: '20', args: ['italic', 'tiny', 'green'], expected: 'italic green' },
+  { name: '17', args: ['bold', 'small', 'orange'], expected: 'bold small orange' },
+  { name: '18', args: ['italic', 'small', 'orange'], expected: 'italic small orange' },
+  { name: '19', args: ['bold', 'large', 'orange'], expected: 'bold large orange' },
+  { name: '20', args: ['italic', 'large', 'orange'], expected: 'italic large orange' },
 ];
 
 function editorClasses(emphasis, size, color) {

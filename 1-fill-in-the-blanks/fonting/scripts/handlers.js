@@ -1,6 +1,6 @@
-function editorClassesHandler(__) {
+function editorClassesHandler(event) {
   // read & process user input
-  const form = event.__.form;
+  const form = event.getElementById.form;
   const newEmphasis = form.emphasis.value;
   const newSize = form.size.value;
   const newColor = form.color.value;
