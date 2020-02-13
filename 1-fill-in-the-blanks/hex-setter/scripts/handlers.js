@@ -13,7 +13,7 @@ function setColorHandler(event) {
 
   // display results to user
   document.getElementById('new-style').innerHTML = newStyle;
-  document.body.__ = newStyle;
+  document.body.style = newStyle;
 
   // log action for developers
   console.log('\n-- user action --');
